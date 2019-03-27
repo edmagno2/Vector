@@ -62,6 +62,15 @@ namespace Vector
             }
 
         }
+        public void GirarAbajo()
+        {
+            int t = _vec[0];
+            for (int i = 0; i < _vec.Length - 1; i++)
+            {
+                _vec[i] = _vec[i+1];
+            }
+            _vec[_vec.Length -1] = t;
+        }
 
         
             
